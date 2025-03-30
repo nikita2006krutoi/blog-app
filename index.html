@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+
+    <link rel="stylesheet" href="index.css" class="css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400&700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <h1 class="title">blog app</h1>
+        <div class="row">
+            <div class="col">
+                <h2 class="post-title-section">Новый пост</h2>
+                <input 
+                    class="js-post-title-input post-title-input" 
+                    placeholder="Заголовок"
+                    type="text">
+                    
+                <textarea 
+                    class="js-post-text-input post-text-input" 
+                    type="text"
+                    placeholder="Напиши пост"></textarea>
+                <button class="js-new-post-btn new-post-btn">
+                    Опубликовать
+                </button>
+                <button class="clear-feed-btn">Очистить ленту</button>
+                <p class="invalid-element"></p>
+            </div>
+
+            <div class="col">
+                <h2 class="feed-title-section">Лента</h2>
+                <div class="js-posts">
+                    Тут пока пусто...
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

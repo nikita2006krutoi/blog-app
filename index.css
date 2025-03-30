@@ -1,0 +1,123 @@
+body {
+    font-family: "Inter";
+    font-weight: 400;
+    line-height: 100%;
+}
+.container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.post-title-section, .feed-title-section {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.post-title-input {
+    margin-bottom: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: 32px;
+    letter-spacing: 0%;
+}
+
+.post-text-input {
+    margin-bottom: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+    border-width: 1px;
+    border-radius: 10px;
+    resize: none;
+    font-size: 32px;
+    letter-spacing: 0%;
+}
+
+.new-post-btn, .clear-feed-btn {
+    margin-bottom: 15px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    background-color: #39FF;
+    border: 0;
+}
+
+.row {
+    margin: 32px auto;
+    display: flex;
+    gap: 200px;
+}
+
+.col {
+    width: 500px;
+}
+.post {
+    padding: 10px;
+}
+
+.post:hover {
+    position: relative;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+.post:hover .delete-post-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    background-image: url("del-btn-icon.svg");
+    background-color: gainsboro;
+    background-size: cover;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-style: none;
+}
+
+
+.delete-post-btn {
+    display: none;
+}
+
+
+.post__date {
+    font-size: 25px;
+    color: #0094FF;
+}
+
+.post__title {
+    margin-top: 15px 0 15px 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.post__text {
+    font-size: 25px;
+    line-height: 100%;
+}
+
+.invalid-element {
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FF0000;
+}
