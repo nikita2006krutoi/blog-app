@@ -123,8 +123,7 @@ function addDeleteEventListeners() {
         button.addEventListener("click", function () {
             const post = button.closest(".post");
             console.log("Найден пост: ", post);
-    posts.splice(posts.indexOf(post.id, 1));
-    post.remove();
+
             deletePost(post);
             
             renderPosts();
@@ -136,6 +135,12 @@ function addDeleteEventListeners() {
 
 function deletePost(post) {
     const posts = getPosts();
+    const index = posts.findIndex(p => p.id == post.id);
+    
+    if (index !== -1) {
+        posts.splice(index, 1);
+        post.remove();   
+    }
 
 }
 
